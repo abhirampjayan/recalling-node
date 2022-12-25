@@ -1,15 +1,24 @@
 {
-  "name": "recalling-node",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com-personal:abhirampjayan/recalling-node.git"
-  },
-  "author": "abhirampjayan",
-  "license": "ISC"
+    "name": "recalling-node",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index",
+        "dev": "nodemon index"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com-personal:abhirampjayan/recalling-node.git"
+    },
+    "author": "abhirampjayan",
+    "license": "ISC",
+    "dependencies": {
+        "date-fns": "^2.29.3",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
 }
