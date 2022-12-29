@@ -1,0 +1,4 @@
+2022-12-29	22:12:33	46c714ec-5282-4410-8a9e-b75f0f11b80f	GET	undefined	/
+2022-12-29	22:12:33	e311ba30-af24-4f41-a1fb-11abc1f9b47b	GET	undefined	/css/style.css
+2022-12-29	22:14:20	6363d3e8-17bd-4149-b2f2-aab5bf00bb11	GET	undefined	/
+2022-12-29	22:14:20	009d97c3-af41-450d-8547-29726ad7227f	GET	undefined	/css/style.css
