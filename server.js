@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const fsPromises = require('fs').promises;
 
+const cors = require('cors');
 const dotenv = require('dotenv');
 const express = require('express');
 
@@ -15,6 +16,8 @@ const PORT = process.env.PORT || 3500;
 const app = express();
 
 app.use(logger);
+
+app.use(cors());
 
 app.use(express.urlencoded({ extended: false }));
 
