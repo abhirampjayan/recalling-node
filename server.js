@@ -15,9 +15,22 @@ const PORT = process.env.PORT || 3500;
 
 const app = express();
 
+const whiteList = ['https://www.abhirampjayan.com', 'http://127.0.0.1:5500'];
+
+const corsOption = {
+  origin: (origin, callback) => {
+    if (whiteList.indexof(origin) !== -1) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not alowed access'));
+    }
+  },
+  optionsSuccessStatus: 200,
+};
+
 app.use(logger);
 
-app.use(cors());
+app.use(cors(corsOption));
 
 app.use(express.urlencoded({ extended: false }));
 
